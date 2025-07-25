@@ -42,9 +42,13 @@ cd ursim-5.22.2.1214876/
 
 You need to modify the _intsall.sh_ file
 
+Look for this line:
+
 ```bash
 commonDependencies='libcurl3 libjava3d-* ttf-dejavu* fonts-ipafont fonts-baekmuk fonts-nanum fonts-arphic-uming fonts-arphic-ukai'
 ```
+
+Replace with:
 
 ```bash
 commonDependencies='libcurl4 libjava3d-* ttf-dejavu* fonts-ipafont fonts-baekmuk fonts-nanum fonts-arphic-uming fonts-arphic-ukai'
