@@ -9,8 +9,7 @@ If you prefer to run URSim inside a Docker container, please refer to the offici
 
 This repository describes two methods for installing URSim:
 
-**1. Using an installation shell script**
-
+**1. Using an installation shell script** <br />
 **2. Manual installation**
 
 ## 1. Using the Installation Shell Script
