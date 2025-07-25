@@ -188,6 +188,7 @@ Or click on the desktop icon.
 <img width="1894" height="1079" alt="Screenshot from 2025-07-25 14-31-53" src="https://github.com/user-attachments/assets/ab892210-9b40-4c99-b62d-594c92b04789" />
 
 You can configure the Network Settings if you need to.
+
 <img width="1323" height="870" alt="Screenshot from 2025-07-25 12-53-14" src="https://github.com/user-attachments/assets/54fc625a-bac3-404c-8050-f03ada2b4d5b" />
 <img width="1344" height="884" alt="Screenshot from 2025-07-25 12-49-03" src="https://github.com/user-attachments/assets/9c870990-2955-4f58-b650-fab7ee75cda3" />
 
