@@ -145,7 +145,7 @@ Copy URSim binaries to /usr/bin
 sudo cp -rv /home/$USER/ursim-5.22.2.1214876/usr/bin/* /usr/bin/
 ```
 
-**URSIM installation completed. To run the software, use: ./start-ursim.sh or click on the desktop icon.**
+**URSIM installation completed. To run the software, use: _./start-ursim.sh_ or click on the desktop icon.**
 
 <img width="1894" height="1079" alt="Screenshot from 2025-07-25 14-31-53" src="https://github.com/user-attachments/assets/ab892210-9b40-4c99-b62d-594c92b04789" />
 
