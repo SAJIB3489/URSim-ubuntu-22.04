@@ -149,7 +149,7 @@ sudo cp -rv /home/$USER/ursim-5.22.2.1214876/usr/bin/* /usr/bin/
 
 You can configure the Network Setting if needed.
 
-#### Contribute
+## Contribute
 
 Found a bug or something not working as expected?
 Please let us know by opening a new issue in the Issues section on GitHub, we're here to help!
