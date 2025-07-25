@@ -42,10 +42,13 @@ cd ursim-5.22.2.1214876/
 
 You need to modify the _intsall.sh_ file
 
-# Step 2: Modifying install.sh
+```bash
+commonDependencies='libcurl3 libjava3d-* ttf-dejavu* fonts-ipafont fonts-baekmuk fonts-nanum fonts-arphic-uming fonts-arphic-ukai'
+```
 
-sed -i "s/commonDependencies='libcurl3/commonDependencies='libcurl4/" install.sh
-sed -i 's|apt-get -y install lib32gcc1|apt-get -y install lib32gcc-s1-amd64-cross|' install.sh
+```bash
+commonDependencies='libcurl4 libjava3d-* ttf-dejavu* fonts-ipafont fonts-baekmuk fonts-nanum fonts-arphic-uming fonts-arphic-ukai'
+```
 
 # Step 4: Fixing dependencies
 
