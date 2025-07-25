@@ -1,14 +1,35 @@
-
 <img width="1228" height="724" alt="Screenshot from 2025-07-25 15-03-06" src="https://github.com/user-attachments/assets/51773cbf-1832-4c00-a5fb-88607753fc29" />
 
+# URSim 5.22.2 Install on Ubuntu 22.04
 
-## URSim 5.22.2 Install on Ubuntu 22.04
+This repository provides instructions for installing URSim 5.22.2 on Ubuntu 22.04 without using Docker.
+If you prefer to run URSim inside a Docker container, please refer to the official image and instructions here: [UR Sim Docker Image](https://hub.docker.com/r/universalrobots/ursim_e-series).
 
-### Prerequisites:
+## Installation Methods
 
-The prerequisites to install URSim 5.22, the user must install the following software. It will ensure that the SRSim will install on Ubuntu 22.04 without any errors.
+This repository describes two methods for installing URSim:
 
-Copy the following command:
+**1. Using an installation shell script**
+**2. Manual installation**
+
+## 1. Using the Installation Shell Script
+
+You can clone the repository, make the script executable, and run it to install URSim automatically. Use the following command:
+
+```bash
+git clone https://github.com/humea-lab/URSim-ubuntu-22.04.git
+cd URSim-ubuntu-22.04
+chmod +x ursim-intsall-22.04.sh
+./ursim-intsall-22.04.sh
+```
+
+## 2. Manual Installation
+
+### Prerequisites
+
+Before installing URSim 5.22.2, ensure the following dependencies are installed. This will help avoid errors during the installation process on Ubuntu 22.04.
+
+Copy and run the following command in your terminal:
 
 ```bash
 sudo apt-get update -y
@@ -23,9 +44,12 @@ sudo apt-get install -y libcurl4
 
 **1. Download the software**
 
-You can download Offline Simulator [URSim 5.22.2](https://www.universal-robots.com/download/software-ur-series/simulator-linux/offline-simulator-ur-series-e-series-ur-sim-for-linux-5222/) from the universal-robots website and follow the process. You probably need to login first to download the software.
+You can download URSim **5.22.2 (Offline Simulator)** from the official Universal Robots website: [URSim 5.22.2](https://www.universal-robots.com/download/software-ur-series/simulator-linux/offline-simulator-ur-series-e-series-ur-sim-for-linux-5222/)
 
-You can also download the software using the following link:
+> [!NOTE]
+> You may need to log in or create an account before accessing the download.
+
+Alternatively, you can download the software directly using the following link:
 
 ```bash
 cd ~
@@ -42,37 +66,41 @@ rm URSim_Linux-5.22.2.1214876.tar.gz
 cd ursim-5.22.2.1214876/
 ```
 
-**3. Modifying intsall.sh**
+**3. Modify intsall.sh**
 
-You need to modify the **_install.sh_** file.
+Open `install.sh` and make the following changes:
 
-Look for this line:
+**Change 1**
+
+Replace:
 
 ```bash
 commonDependencies='libcurl3 libjava3d-* ttf-dejavu* fonts-ipafont fonts-baekmuk fonts-nanum fonts-arphic-uming fonts-arphic-ukai'
 ```
 
-Replace with:
+With:
 
 ```bash
 commonDependencies='libcurl4 libjava3d-* ttf-dejavu* fonts-ipafont fonts-baekmuk fonts-nanum fonts-arphic-uming fonts-arphic-ukai'
 ```
 
-Then look for another line:
+**Change 2**
+
+Replace:
 
 ```bash
 sudo bash -c "apt-get -y install lib32gcc1 lib32stdc++6 libc6-i386 $commonDependencies && (echo '$packages' | xargs dpkg -i --force-overwrite)"
 ```
 
-Replace with:
+With:
 
 ```bash
 sudo bash -c "apt-get -y install lib32gcc-s1-amd64-cross lib32stdc++6 libc6-i386 $commonDependencies && (echo '$packages' | xargs dpkg -i --force-overwrite)"
 ```
 
-**4. Fixing dependencies**
+**4. Fix Dependency Package**
 
-You need to fix the dependencies.
+You need to fix the dependency packages.
 
 ```bash
 cd ursim-dependencies/
@@ -82,23 +110,21 @@ tar -C extras-control -zxf control.tar.gz
 cd extras-control/
 ```
 
-**5. Modify control file**
+**5. Modify the `control` file**
 
-You need to modify the **_control_** file in extras-control/ directory. Open the _control_ file and
-
-Look for this line:
+Edit the `control` file in extras-control/ and change:
 
 ```bash
 Depends: lib32gcc1 (>= 1:4.1.1), lib32stdc++6 (>= 4.1.1), libc6-i386 (>= 2.3.4)
 ```
 
-Replace with:
+To:
 
 ```bash
 Depends: lib32gcc-s1-amd64-cross, lib32stdc++6 (>= 4.1.1), libc6-i386 (>= 2.3.4)
 ```
 
-**6. Repack control.tar.gz and rebuild the deb package**
+**6. Repack and Rebuild `.deb`**
 
 You need to repack the control.tar.gz file and rebuild.
 
@@ -111,16 +137,16 @@ rm libxmlrpc-c-ur_1.33.14_amd64.deb
 cd ..
 ```
 
-**7. Set Java environment**
+**7. Set Java Environment**
 
-If you have multiple Java versions on your PC, you can set the Java environment.
+If multiple Java versions are installed, set Java 8:
 
 ```bash
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
-You can also add them to your .bashrc file. So, for the new session, you don't need to set the environment manually.
+To persist the environment settings, add to `~/.bashrc`:
 
 ```bash
 echo '#Java 8 for URSim' >> ~/.bashrc
@@ -128,13 +154,13 @@ echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> ~/.bashrc
 echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.bashrc
 ```
 
-You can verify your Java version.
+Verify:
 
 ```bash
 java -version
 ```
 
-**8. Run install**
+**8. Run the Installer**
 
 All set, now you can run **_install.sh_** script.
 
@@ -143,13 +169,21 @@ cd /ursim-5.22.2.1214876/
 ./install.sh
 ```
 
-Copy URSim binaries to /usr/bin
+Copy the URSim binaries to `/usr/bin`:
 
 ```bash
 sudo cp -rv /home/$USER/ursim-5.22.2.1214876/usr/bin/* /usr/bin/
 ```
 
-**URSIM installation completed. To run the software, use: _./start-ursim.sh_ or click on the desktop icon.**
+**URSIM installation completed**
+
+To launch URSim:
+
+```bash
+./start-ursim.sh
+```
+
+Or click on the desktop icon.\*\*
 
 <img width="1894" height="1079" alt="Screenshot from 2025-07-25 14-31-53" src="https://github.com/user-attachments/assets/ab892210-9b40-4c99-b62d-594c92b04789" />
 
