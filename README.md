@@ -2,7 +2,7 @@
 
 # URSim 5.22.2 Install on Ubuntu 22.04
 
-This repository provides instructions for installing URSim 5.22.2 on Ubuntu 22.04 without using Docker.
+This repository provides instructions for installing URSim 5.22.2 (UR-Series & e-Series) on Ubuntu 22.04 without using Docker.
 If you prefer to run URSim inside a Docker container, please refer to the official image and instructions here: [UR Sim Docker Image](https://hub.docker.com/r/universalrobots/ursim_e-series).
 
 ## Installation Methods
