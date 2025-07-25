@@ -68,6 +68,8 @@ sudo bash -c "apt-get -y install lib32gcc-s1-amd64-cross lib32stdc++6 libc6-i386
 
 **4. Fixing dependencies**
 
+You need to fix the dependencies.
+
 ```bash
 cd ursim-dependencies/
 ar x libxmlrpc-c-ur_1.33.14_amd64.deb
@@ -77,6 +79,7 @@ cd extras-control/
 ```
 
 **5. Modify control file**
+
 You need to modify the **_control_** file in extras-control/ directory. Open the _control_ file and
 
 Look for this line:
@@ -92,6 +95,7 @@ Depends: lib32gcc-s1-amd64-cross, lib32stdc++6 (>= 4.1.1), libc6-i386 (>= 2.3.4)
 ```
 
 **6. Repack control.tar.gz and Rebuild deb package**
+
 You need to repack the control.tar.gz file and rebuild.
 
 ```bash
@@ -104,6 +108,7 @@ cd ..
 ```
 
 **7. Set Java environment**
+
 If you have multiple Java version on your PC, you can set the Java environment.
 
 ```bash
