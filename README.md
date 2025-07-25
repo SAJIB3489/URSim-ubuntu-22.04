@@ -15,7 +15,7 @@ sudo apt-get update -y
 sudo apt-get install -y libcurl4
 ```
 
-#### Install the URSim
+### Install the URSim
 
 **1. Download the software**
 
@@ -40,7 +40,7 @@ cd ursim-5.22.2.1214876/
 
 **3. Modifying intsall.sh**
 
-You need to modify the _intsall.sh_ file
+You need to modify the **_intsall.sh_** file.
 
 Look for this line:
 
