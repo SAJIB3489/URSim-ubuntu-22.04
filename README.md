@@ -44,7 +44,7 @@ sudo apt-get install -y libcurl4
 
 **1. Download the software**
 
-You can download URSim **5.22.2 (Offline Simulator)** from the official Universal Robots website: [URSim 5.22.2](https://www.universal-robots.com/download/software-ur-series/simulator-linux/offline-simulator-ur-series-e-series-ur-sim-for-linux-5222/)
+You can download URSim **5.22.2 (Offline PolyScope simulator)** from the official Universal Robots website: [URSim 5.22.2](https://www.universal-robots.com/download/software-ur-series/simulator-linux/offline-simulator-ur-series-e-series-ur-sim-for-linux-5222/)
 
 > [!NOTE]
 > You may need to log in or create an account before accessing the download.
