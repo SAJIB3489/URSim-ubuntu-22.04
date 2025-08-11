@@ -129,7 +129,7 @@ Depends: lib32gcc-s1-amd64-cross, lib32stdc++6 (>= 4.1.1), libc6-i386 (>= 2.3.4)
 You need to repack the control.tar.gz file and rebuild.
 
 ```bash
-tar cfz control.tar.gz \*
+tar cfz control.tar.gz *
 mv control.tar.gz ..
 cd ..
 ar r new_urtool3_amd64.deb debian-binary control.tar.gz data.tar.gz
