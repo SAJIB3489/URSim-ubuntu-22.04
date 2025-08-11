@@ -17,7 +17,7 @@ This repository describes two methods for installing URSim:
 You can clone the repository, make the script executable, and run it to install URSim automatically. Use the following command:
 
 ```bash
-git clone https://github.com/humea-lab/URSim-ubuntu-22.04.git
+git clone https://github.com/SAJIB3489/URSim-ubuntu-22.04.git
 cd URSim-ubuntu-22.04
 chmod +x ursim-intsall-22.04.sh
 ./ursim-intsall-22.04.sh
