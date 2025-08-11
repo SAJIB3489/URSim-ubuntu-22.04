@@ -165,7 +165,6 @@ java -version
 All set, now you can run **_install.sh_** script.
 
 ```bash
-cd /ursim-5.22.2.1214876/
 ./install.sh
 ```
 
