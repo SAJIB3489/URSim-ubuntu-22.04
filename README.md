@@ -1,4 +1,4 @@
-<img width="1228" height="724" alt="Screenshot from 2025-07-25 15-03-06" src="https://github.com/user-attachments/assets/51773cbf-1832-4c00-a5fb-88607753fc29" />
+<img width="1228" height="724" alt="Screenshot from 2025-07-25 15-03-06" src="https://github.com/user-attachments/assets/262cd570-95cd-480f-b2c2-ba320d7172c1" />
 
 # URSim 5.22.2 Install on Ubuntu 22.04
 
@@ -221,23 +221,26 @@ To launch URSim:
 
 Or click on the desktop icon.
 
-<img width="1894" height="1079" alt="Screenshot from 2025-07-25 14-31-53" src="https://github.com/user-attachments/assets/ab892210-9b40-4c99-b62d-594c92b04789" />
+<img width="1894" height="1079" alt="Screenshot from 2025-07-25 14-31-53" src="https://github.com/user-attachments/assets/81677e69-513d-4b7b-83c2-627b20e8bb0a" />
 
 You can configure the Network Settings if you need to.
 
-<img width="1323" height="870" alt="Screenshot from 2025-07-25 12-53-14" src="https://github.com/user-attachments/assets/54fc625a-bac3-404c-8050-f03ada2b4d5b" />
-<img width="1344" height="884" alt="Screenshot from 2025-07-25 12-49-03" src="https://github.com/user-attachments/assets/9c870990-2955-4f58-b650-fab7ee75cda3" />
+
+<img width="1323" height="870" alt="Screenshot from 2025-07-25 12-53-14" src="https://github.com/user-attachments/assets/4a94c218-14a3-4521-aad4-dc4a448a29c8" />
+<img width="1344" height="884" alt="Screenshot from 2025-07-25 12-49-03" src="https://github.com/user-attachments/assets/23d97e21-a518-4ea7-a710-aab6844e7d08" />
 
 
 
 ## Troubleshooting
 
 1. Once the installation is complete, if the desktop application icons are not launchable, right-click on the app icon and select `Allow Launching` to enable them.
-<img width="2000" height="699" alt="Untitled design (1)" src="https://github.com/user-attachments/assets/165f4be1-3121-4dfa-a653-8fb34932da6e" />
+
+<img width="1346" height="448" alt="Screenshot from 2025-08-11 22-12-04" src="https://github.com/user-attachments/assets/842ca4c5-97eb-42f6-9757-2879928f7dc0" />
 
 
 2. If the Controller is OK but you can not click on **🟢ON** button in URSim or terminal log shows **Controller monitoring timed out while waiting for real time robot data, Controller monitoring timed out too many times. Restarting connection**, then stop the urcontrol using `sudo ./stopurcontrol.sh`. After that launch the Software or *_./start-ursim.sh_*.
-<img width="1205" height="461" alt="Screenshot from 2025-08-11 21-59-36" src="https://github.com/user-attachments/assets/e825b791-a983-458a-8a1e-ae8d7ded9113" />
+
+<img width="1205" height="461" alt="Screenshot from 2025-08-11 21-59-36" src="https://github.com/user-attachments/assets/41090336-281b-48cd-ab98-fa8646357ad0" />
 
 
 ## Contribute
