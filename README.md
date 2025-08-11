@@ -236,6 +236,9 @@ You can configure the Network Settings if you need to.
 <img width="2000" height="699" alt="Untitled design (1)" src="https://github.com/user-attachments/assets/165f4be1-3121-4dfa-a653-8fb34932da6e" />
 
 
+2. If the Controller is OK but you can not click on **🟢ON** button in URSim or terminal log shows **Controller monitoring timed out while waiting for real time robot data, Controller monitoring timed out too many times. Restarting connection**, then stop the urcontrol using `sudo ./stopurcontrol.sh`. After that launch the Software or *_./start-ursim.sh_*.
+<img width="1205" height="461" alt="Screenshot from 2025-08-11 21-59-36" src="https://github.com/user-attachments/assets/e825b791-a983-458a-8a1e-ae8d7ded9113" />
+
 
 ## Contribute
 
