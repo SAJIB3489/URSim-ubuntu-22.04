@@ -17,11 +17,30 @@ This repository describes two methods for installing URSim:
 You can clone the repository, make the script executable, and run it to install URSim automatically. Use the following command:
 
 ```bash
-git clone https://github.com/SAJIB3489/URSim-ubuntu-22.04.git
+git clone https://github.com/humea-lab/URSim-ubuntu-22.04.git
 cd URSim-ubuntu-22.04
 chmod +x ursim-intsall-22.04.sh
 ./ursim-intsall-22.04.sh
 ```
+
+**Enable Modbus server in URSim**
+
+As per default, the Modbus server is activated. In case it is not then open the file `starturcontrol.sh` which is located in the installation folder using a file editor. Open `/ursim-5.22.2.1214876/starturcontrol.sh`
+
+Replace:
+
+```bash
+HOME=$SCRIPT_DIR $SCRIPT_DIR/URControl -m $PRODUCT_VERSION -r &>$SCRIPT_DIR/URControl.log &
+```
+
+With:
+
+```bash
+echo mypasswd | sudo -S HOME=$SCRIPT_DIR $SCRIPT_DIR/URControl -m $PRODUCT_VERSION -r &>$SCRIPT_DIR/URControl.log &
+```
+Here, replace **mypasswd** with your login password for Linux. 
+
+-----------------------------------------------------------------------------------------------------------------------------
 
 ## 2. Manual Installation
 
@@ -174,7 +193,25 @@ Copy the URSim binaries to `/usr/bin`:
 sudo cp -rv /home/$USER/ursim-5.22.2.1214876/usr/bin/* /usr/bin/
 ```
 
-**URSIM installation completed**
+**9. Enable Modbus server in URSim**
+
+As per default, the Modbus server is activated. In case it is not then open the file `starturcontrol.sh` which is located in the installation folder using a file editor. Open `/ursim-5.22.2.1214876/starturcontrol.sh`
+
+Replace:
+
+```bash
+HOME=$SCRIPT_DIR $SCRIPT_DIR/URControl -m $PRODUCT_VERSION -r &>$SCRIPT_DIR/URControl.log &
+```
+
+With:
+
+```bash
+echo mypasswd | sudo -S HOME=$SCRIPT_DIR $SCRIPT_DIR/URControl -m $PRODUCT_VERSION -r &>$SCRIPT_DIR/URControl.log &
+```
+Here, replace **mypasswd** with your login password for Linux. 
+
+---------------------------------------------------------------------------------------------------
+**🟩 URSIM installation completed.**
 
 To launch URSim:
 
