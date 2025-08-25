@@ -19,10 +19,21 @@ You can clone the repository, make the script executable, and run it to install 
 ```bash
 git clone https://github.com/SAJIB3489/URSim-ubuntu-22.04.git
 cd URSim-ubuntu-22.04
+```
+
+Vist [URSim 5.22.2](https://www.universal-robots.com/download/software-ur-series/simulator-linux/offline-simulator-ur-series-e-series-ur-sim-for-linux-5222/) and copy the download link and past it to []()
+
+> [!NOTE]
+> You may need to log in or create an account before accessing the download.
+
+<img width="1796" height="856" alt="link-copy-paste" src="https://github.com/user-attachments/assets/0f8a048f-704f-4395-b830-d3e97df26944" />
+
+```bash
+git clone https://github.com/SAJIB3489/URSim-ubuntu-22.04.git
+cd URSim-ubuntu-22.04
 chmod +x ursim-intsall-22.04.sh
 ./ursim-intsall-22.04.sh
 ```
-<img width="1796" height="856" alt="link-copy-paste" src="https://github.com/user-attachments/assets/0f8a048f-704f-4395-b830-d3e97df26944" />
 
 **Enable Modbus server in URSim**
 
