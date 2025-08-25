@@ -242,6 +242,17 @@ You can configure the Network Settings if you need to.
 
 <img width="1205" height="461" alt="Screenshot from 2025-08-11 21-59-36" src="https://github.com/user-attachments/assets/41090336-281b-48cd-ab98-fa8646357ad0" />
 
+----------------------------------
+## Uninstall or Remove
+
+Run the following command to fully remove URSim.
+
+```bash
+sudo rm -r URSim-ubuntu-22.04/
+sudo rm -r /usr/bin/ur*
+sudo rm -r /$HOME/Desktop/*
+sudo rm -r /usr/local/ur*
+```
 
 ## Contribute
 
@@ -250,3 +261,8 @@ Please let us know by opening a new issue in the Issues section on GitHub. We're
 
 Have a solution or improvement?
 Feel free to contribute by opening a Pull Request with your fix or enhancement. Your contributions are always welcome and appreciated!
+
+
+## Acknowledgements
+
+* [Universal Robots](https://www.universal-robots.com/download/software-ur-series/simulator-linux/offline-simulator-ur-series-e-series-ur-sim-for-linux-5222/)
