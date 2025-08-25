@@ -21,7 +21,7 @@ git clone https://github.com/SAJIB3489/URSim-ubuntu-22.04.git
 cd URSim-ubuntu-22.04
 ```
 
-Vist [URSim 5.22.2](https://www.universal-robots.com/download/software-ur-series/simulator-linux/offline-simulator-ur-series-e-series-ur-sim-for-linux-5222/), copy the download link, and paste it into the [ursim-intsall-22.04.sh](https://github.com/SAJIB3489/URSim-ubuntu-22.04/blob/d3e1d6cae3e9ced09d22663ed457e4a7d1e7cbea/ursim-intsall-22.04.sh#L15) file and save it. Refer to the image below for guidance.
+Vist the [URSim 5.22.2 download page](https://www.universal-robots.com/download/software-ur-series/simulator-linux/offline-simulator-ur-series-e-series-ur-sim-for-linux-5222/), copy the download link, and paste it into the [ursim-intsall-22.04.sh](https://github.com/SAJIB3489/URSim-ubuntu-22.04/blob/d3e1d6cae3e9ced09d22663ed457e4a7d1e7cbea/ursim-intsall-22.04.sh#L15) file and save it. Refer to the image below for guidance.
 
 > [!NOTE]
 > You may need to log in or create an account before accessing the download.
