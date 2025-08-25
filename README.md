@@ -22,6 +22,7 @@ cd URSim-ubuntu-22.04
 chmod +x ursim-intsall-22.04.sh
 ./ursim-intsall-22.04.sh
 ```
+<img width="1796" height="856" alt="link-copy-paste" src="https://github.com/user-attachments/assets/0f8a048f-704f-4395-b830-d3e97df26944" />
 
 **Enable Modbus server in URSim**
 
