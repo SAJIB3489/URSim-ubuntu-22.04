@@ -11,7 +11,7 @@ sudo apt-get install -y runit
 sudo apt-get update -y
 sudo apt-get install -y libcurl4
 
-wget https://s3-eu-west-1.amazonaws.com/ur-support-site/252750/URSim_Linux-5.22.2.1214876.tar.gz
+wget https://s3-eu-west-1.amazonaws.com/ur-support-site/URSim_Linux-5.22.2.1214876.tar.gz
 tar xvzf URSim_Linux-5.22.2.1214876.tar.gz
 rm URSim_Linux-5.22.2.1214876.tar.gz
 cd ursim-5.22.2.1214876/
